@@ -1,0 +1,57 @@
+<nav>
+    <a href="/" title="Torge Stehr">
+        <h1>Torge Stehr</h1>
+    </a>
+    <div class="links">
+        <p>Case Studies:</p>
+        <a href="/saysync" title="SaySync">
+            <h1>/&nbsp;SaySync</h1>
+        </a>
+    </div>
+</nav>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0 40px;
+        width: 100%;
+        min-width: 100%;
+        border-bottom: 2px solid $black;
+
+        .links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+        }
+
+        h1,
+        p {
+            margin: 0;
+            color: $black;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+            text-transform: uppercase;
+            transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+
+        a {
+            margin: 0;
+            text-decoration: none;
+
+            &:hover {
+                h1,
+                p {
+                    color: $primary;
+                }
+            }
+        }
+    }
+</style>
