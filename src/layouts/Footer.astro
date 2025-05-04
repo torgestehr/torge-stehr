@@ -1,0 +1,108 @@
+<footer>
+    <div class="contact">
+        <p>Contact me</p>
+        <h2>
+            Get it touch
+            <br />
+            <a href="mailto:hello@torgestehr.com" title="hello@torgestehr.com">hello@torgestehr.com</a>
+        </h2>
+    </div>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/torge-stehr" title="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/torgestehr" title="GitHub">GitHub</a>
+        <a href="" title="YouTube">YouTube</a>
+    </div>
+</footer>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    .contact {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0 40px;
+        padding: 10px 0;
+        width: calc(100% - 80px);
+        min-width: calc(100% - 80px);
+        border-top: 2px solid $black;
+
+        p {
+            position: relative;
+            margin: 0;
+            padding-left: 16px;
+            color: $black;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+            text-transform: uppercase;
+            transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $black;
+            }
+        }
+
+        h2 {
+            margin: 100px 0;
+            color: $black;
+            font-weight: 500;
+            font-size: 77px;
+            line-height: 87px;
+
+            a {
+                position: relative;
+                color: $primary;
+                text-decoration: none;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    height: 9px;
+                    background: $primary;
+                    display: none;
+                }
+
+                &:hover {
+                    &::before {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 2px solid $black;
+
+        a {
+            margin: 0;
+            color: $black;
+            font-size: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 70px 40px;
+            border-right: 2px solid $black;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+</style>
