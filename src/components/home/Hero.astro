@@ -1,0 +1,27 @@
+---
+import { getLangFromUrl, useTranslations } from '../../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section>
+    <h2 set:html={t('hero.title')} />
+</section>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    section {
+        padding: 120px 4vw;
+        width: 100%;
+        min-width: 100%;
+
+        h2 {
+            margin: 0;
+            color: $black;
+            font-weight: 500;
+            font-size: 6vw;
+            line-height: 8vw;
+        }
+    }
+</style>

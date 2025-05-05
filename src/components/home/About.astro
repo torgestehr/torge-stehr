@@ -1,0 +1,77 @@
+---
+import torgestehr from '../../assets/torge-stehr.jpeg';
+import { getLangFromUrl, useTranslations } from '../../utils/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section>
+    <p class="title">{t('about.title')}</p>
+    <div>
+        <img src={torgestehr.src} alt="Torge Stehr" title="Torge Stehr" fetchpriority="high" />
+        <p set:html={t('about.text')} />
+    </div>
+</section>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    section {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0 4vw;
+        padding: 140px 0;
+        width: calc(100% - 8vw);
+        min-width: calc(100% - 8vw);
+        border-top: 2px solid $black;
+
+        .title {
+            position: absolute;
+            top: 20px;
+            margin: 0;
+            padding-left: 16px;
+            color: $black;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $black;
+            }
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 600px 1fr;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                margin: 6vw;
+                color: $black;
+                font-size: 32px;
+                line-height: 45px;
+                font-weight: 500;
+            }
+        }
+    }
+</style>

@@ -1,8 +1,14 @@
+---
+import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <footer>
     <div class="contact">
-        <p>Contact me</p>
+        <p class="title">{t('footer.title')}</p>
         <h2>
-            Get it touch
+            {t('footer.contact')}
             <br />
             <a href="mailto:hello@torgestehr.com" title="hello@torgestehr.com">hello@torgestehr.com</a>
         </h2>
@@ -18,24 +24,25 @@
     @use '/src/styles/variables' as *;
 
     .contact {
+        position: relative;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        margin: 0 40px;
-        padding: 10px 0;
-        width: calc(100% - 80px);
-        min-width: calc(100% - 80px);
+        margin: 0 4vw;
+        padding: 140px 0;
+        width: calc(100% - 8vw);
+        min-width: calc(100% - 8vw);
         border-top: 2px solid $black;
 
-        p {
-            position: relative;
+        .title {
+            position: absolute;
+            top: 20px;
             margin: 0;
             padding-left: 16px;
             color: $black;
             font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 0.5px;
+            font-size: 16px;
             line-height: 20px;
             text-transform: uppercase;
             transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -54,11 +61,12 @@
         }
 
         h2 {
-            margin: 100px 0;
+            margin: 0;
+            margin-bottom: 10px;
             color: $black;
             font-weight: 500;
-            font-size: 77px;
-            line-height: 87px;
+            font-size: 6vw;
+            line-height: 7vw;
 
             a {
                 position: relative;
@@ -94,10 +102,10 @@
         a {
             margin: 0;
             color: $black;
-            font-size: 50px;
+            font-size: 64px;
             font-weight: 500;
             text-decoration: none;
-            padding: 70px 40px;
+            padding: 70px 4vw;
             border-right: 2px solid $black;
 
             &:last-child {

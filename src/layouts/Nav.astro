@@ -1,10 +1,36 @@
+---
+import { getLangFromUrl, useLocalLink, useTranslations, getNewUrl } from '../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const link = useLocalLink(lang);
+---
+
 <nav>
-    <a href="/" title="Torge Stehr">
+    <div class="language">
+        {
+            lang === 'en' ? (
+                <a href={getNewUrl(lang, 'de', Astro.url)} title="Deutsch">
+                    Deutsch
+                    <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M458.112 0H191.445V64H402.197L0 466.197L45.248 511.445L447.445 109.248V320H511.445V53.3333C511.445 23.936 487.531 0 458.112 0Z" />
+                    </svg>
+                </a>
+            ) : (
+                <a href={getNewUrl(lang, 'en', Astro.url)} title="English">
+                    English
+                    <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M458.112 0H191.445V64H402.197L0 466.197L45.248 511.445L447.445 109.248V320H511.445V53.3333C511.445 23.936 487.531 0 458.112 0Z" />
+                    </svg>
+                </a>
+            )
+        }
+    </div>
+    <a href={link('/')} title="Torge Stehr">
         <h1>Torge Stehr</h1>
     </a>
     <div class="links">
-        <p>Case Studies:</p>
-        <a href="/saysync" title="SaySync">
+        <p>{t('nav.case-studies')}</p>
+        <a href={link('/saysync')} title="SaySync">
             <h1>/&nbsp;SaySync</h1>
         </a>
     </div>
@@ -14,11 +40,12 @@
     @use '/src/styles/variables' as *;
 
     nav {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 50px;
-        padding: 0 40px;
+        padding: 0 4vw;
         width: 100%;
         min-width: 100%;
         border-bottom: 2px solid $black;
@@ -30,13 +57,49 @@
             gap: 16px;
         }
 
+        .language {
+            position: absolute;
+            right: 4vw;
+            bottom: -100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 100;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+                margin: 0;
+                color: $black;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+
+                    path {
+                        fill: $black;
+                    }
+                }
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
         h1,
         p {
             margin: 0;
             color: $black;
             font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 0.5px;
+            font-size: 16px;
             line-height: 20px;
             text-transform: uppercase;
             transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
