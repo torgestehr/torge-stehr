@@ -7,10 +7,23 @@ const t = useTranslations(lang);
 ---
 
 <section>
-    <p class="title">{t('about.title')}</p>
-    <div>
+    <h2 class="title">{t('about.title')}</h2>
+    <div class="grid">
         <img src={torgestehr.src} alt="Torge Stehr" title="Torge Stehr" fetchpriority="high" />
-        <p set:html={t('about.text')} />
+        <div class="content">
+            <p class="text" set:html={t('about.text')} />
+            <div>
+                <input id="date-format" type="hidden" value={t('about.date-format')} />
+                <p>{t('about.time')}&nbsp;</p>
+                <p id="time"></p>
+            </div>
+            <!-- Show local live time in Hanover, Germany -->
+            <!-- <p>
+                {t('about.timezone')}: {new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })}
+            <!-- <p>
+                {t('about.timezone')}: {new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })}
+            </p> -->
+        </div>
     </div>
 </section>
 
@@ -54,7 +67,7 @@ const t = useTranslations(lang);
             }
         }
 
-        div {
+        .grid {
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -65,13 +78,50 @@ const t = useTranslations(lang);
                 height: auto;
             }
 
-            p {
-                margin: 6vw;
-                color: $black;
-                font-size: 32px;
-                line-height: 45px;
-                font-weight: 500;
+            .content {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 6vw;
+
+                .text {
+                    margin: 0;
+                    color: $black;
+                    font-size: 32px;
+                    line-height: 45px;
+                    font-weight: 500;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    p {
+                        margin: 0;
+                        margin-top: 10px;
+                        color: $black;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }
 </style>
+
+<script>
+    function updateClock() {
+        const dateFormat = (document.getElementById('date-format')! as HTMLInputElement).value;
+        const now = new Date();
+        const timeZone: string = 'Europe/Berlin';
+        const formatter = new Intl.DateTimeFormat(dateFormat ?? 'en-US', { timeZone: timeZone, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        document.getElementById('time')!.textContent = formatter.format(now);
+    }
+
+    updateClock();
+    setInterval(updateClock, 500);
+</script>

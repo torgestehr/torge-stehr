@@ -19,8 +19,23 @@ export const ui = {
             16+ years of experience designing stuff for screens. A strong, structured, efficient, detail- and impact-oriented digital designer, with focus on UI/UX design.
             <br />
             <br />
-            Based in Orange County, California
+            Based in Hanover, Germany
         `,
+        'about.time': 'Local time:',
+        'about.date-format': 'en-US',
+        'services.title': "What I'm good at",
+        'services.software-development.title': 'Software Development',
+        'services.software-development.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.workflow-automation.title': 'Workflow Automation',
+        'services.workflow-automation.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.ai-agents.title': 'AI Agents',
+        'services.ai-agents.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.webdesign.title': 'Webdesign',
+        'services.webdesign.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.it-support.title': 'IT Support',
+        'services.it-support.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.consulting.title': 'Consulting',
+        'services.consulting.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
         'footer.title': 'Contact me',
         'footer.contact': 'Get it touch'
     },
@@ -42,8 +57,23 @@ export const ui = {
             16+ years of experience designing stuff for screens. A strong, structured, efficient, detail- and impact-oriented digital designer, with focus on UI/UX design.
             <br />
             <br />
-            Based in Orange County, California
+            Sitz in Hannover, Deutschland
         `,
+        'about.time': 'Ortszeit:',
+        'about.date-format': 'de',
+        'services.title': 'Was ich gut kann',
+        'services.software-development.title': 'Software-Entwicklung',
+        'services.software-development.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.workflow-automation.title': 'Workflow-Automatisierung',
+        'services.workflow-automation.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.ai-agents.title': 'AI-Agents',
+        'services.ai-agents.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.webdesign.title': 'Webdesign',
+        'services.webdesign.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.it-support.title': 'IT-Support',
+        'services.it-support.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
+        'services.consulting.title': 'Beratung',
+        'services.consulting.text': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, vero impedit sint consequuntur quis animi quibusdam quae aspernatur cum quod sunt ipsa ut aliquam modi laboriosam odit quaerat. Pariatur, qui?',
         'footer.title': 'Kontaktieren Sie mich',
         'footer.contact': 'Kontakt aufnehmen'
     }
