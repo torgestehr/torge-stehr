@@ -7,8 +7,19 @@ import Services from '../../components/home/Services.astro';
 ---
 
 <Layout>
-    <Hero />
-    <CaseStudies />
-    <About />
-    <Services />
+    <main>
+        <Hero />
+        <CaseStudies />
+        <About />
+        <Services />
+    </main>
 </Layout>
+
+<style lang="scss">
+    main {
+        margin: 0 auto;
+        padding: 0 4vw;
+        width: 100%;
+        max-width: 1850px;
+    }
+</style>
