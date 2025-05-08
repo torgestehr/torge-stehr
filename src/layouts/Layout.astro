@@ -3,6 +3,7 @@ import '/src/styles/global.scss';
 
 import Nav from './Nav.astro';
 import Footer from './Footer.astro';
+const { ...props } = Astro.props;
 ---
 
 <!doctype html>
@@ -10,9 +11,15 @@ import Footer from './Footer.astro';
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Astro Basics</title>
+        <title>{props.title}</title>
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Torge Stehr" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
 
         <!-- fonts -->
         <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
