@@ -9,14 +9,14 @@ export const ui = {
             Work of Torge Stehr
         `,
         'casestudy1.title': 'Case Study 01',
-        'casestudy1.text': 'I led the redesign of a popular surf forecast product, enhancing user experience and engagement through innovative design solutions',
+        'casestudy1.text': 'I developed the software product SaySync, which offers users an easy link between Pipedrive and Outlook, saving time and reducing errors.',
         'casestudy1.link': 'View Case Study',
         'about.title': 'About me',
         'about.text': `
-            Father of two, lover of pixel art, web3 enthusiast, amateur pizza maker
+            A son of God, startup enthusiast, outdoor freak, student
             <br />
             <br />
-            16+ years of experience designing stuff for screens. A strong, structured, efficient, detail- and impact-oriented digital designer, with focus on UI/UX design.
+            Writes code since the age of 14. A creative, critical thinking, detail and impact oriented developer with a focus on greater efficiency and improvement through software.
             <br />
             <br />
             Based in Hanover, Germany
@@ -47,14 +47,14 @@ export const ui = {
             Arbeit von Torge Stehr
         `,
         'casestudy1.title': 'Fallstudie 01',
-        'casestudy1.text': 'I led the redesign of a popular surf forecast product, enhancing user experience and engagement through innovative design solutions',
+        'casestudy1.text': 'Ich habe das Softwareprodukt SaySync entwickelt, das den Benutzern eine einfache Verbindung zwischen Pipedrive und Outlook bietet, was Zeit spart und Fehler reduziert.',
         'casestudy1.link': 'Fallstudie ansehen',
         'about.title': 'Über mich',
         'about.text': `
-            Father of two, lover of pixel art, web3 enthusiast, amateur pizza maker
+            Ein Sohn Gottes, Startup-Begeisterter, Outdoor-Freak, Student
             <br />
             <br />
-            16+ years of experience designing stuff for screens. A strong, structured, efficient, detail- and impact-oriented digital designer, with focus on UI/UX design.
+            Schreibt Code seit dem 14. Lebensjahr. Ein kreativer, kritisch denkender, detail- und wirkungsorientierter Entwickler mit Schwerpunkt auf mehr Effizienz und Verbesserung durch Software.
             <br />
             <br />
             Sitz in Hannover, Deutschland

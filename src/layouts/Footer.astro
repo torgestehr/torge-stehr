@@ -19,7 +19,8 @@ const t = useTranslations(lang);
         <div>
             <a href="https://www.linkedin.com/in/torge-stehr" title="LinkedIn">LinkedIn</a>
             <a href="https://github.com/torgestehr" title="GitHub">GitHub</a>
-            <a href="https://www.youtube.com/@torgestehr" title="YouTube">YouTube</a>
+            <a href="/assets/cv_torge-stehr.pdf" title="CV">CV</a>
+            <!-- <a href="https://www.youtube.com/@torgestehr" title="YouTube">YouTube</a> -->
         </div>
     </div>
 </footer>
@@ -76,6 +77,11 @@ const t = useTranslations(lang);
                 font-weight: 500;
                 font-size: 6vw;
                 line-height: 7vw;
+
+                @media (min-width: 1980px) {
+                    font-size: 120px;
+                    line-height: 140px;
+                }
 
                 a {
                     position: relative;
