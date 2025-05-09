@@ -4,14 +4,46 @@ import '/src/styles/global.scss';
 import Nav from './Nav.astro';
 import Footer from './Footer.astro';
 const { ...props } = Astro.props;
+const language = props.language === 'de' ? 'de' : 'en';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={language}>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- website -->
         <title>{props.title}</title>
+        <meta name="description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
+        <meta name="keywords" content={`Torge Stehr, Portfolio, SaySync, hello@torgestehr.com, ${language === 'de' ? 'Arbeit von Torge Stehr, Software-Entwicklung, Softwarelösungen, Workflow-Automatisierung, AI-Agents, Webdesign, IT-Support, Problemlösungen, Beratung, Kontakt' : 'work of Torge Stehr, software development, software solutions, workflow automation, AI agents, web design, IT support, problem solving, consulting, contact'}`} />
+        <meta name="author" content="Torge Stehr" />
+        <meta name="copyright" content={`Copyright © ${new Date().getFullYear()} Torge Stehr. All Rights Reserved`} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="DC.title" content="Torge Stehr" />
+        <meta name="DC.subject" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
+        <meta name="DC.creator" content="Torge Stehr" />
+
+        Brand and UI/UX Designer turned Product Designer based out of Los Angeles, CA.
+
+        <!-- search engine tags -->
+        <meta itemprop="name" content="Torge Stehr" />
+        <meta itemprop="description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
+        <meta itemprop="image" content="/assets/torge-stehr.jpeg" />
+
+        <!-- opengraph -->
+        <meta property="og:locale" content={language === 'de' ? 'de_DE' : 'en_US'} />
+        <meta property="og:title" content="Torge Stehr" />
+        <meta property="og:site_name" content="Torge Stehr" />
+        <meta property="og:url" content={language === 'de' ? 'https://torgestehr.com/de' : 'https://torgestehr.com/'} />
+        <meta property="og:description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/assets/torge-stehr.jpeg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Torge Stehr" />
+        <meta name="twitter:description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
+        <meta name="twitter:image" content="/assets/torge-stehr.jpeg" />
 
         <!-- favicon -->
         <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -20,6 +52,7 @@ const { ...props } = Astro.props;
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Torge Stehr" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta name="theme-color" content="#996" />
 
         <!-- fonts -->
         <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />

@@ -1,5 +1,6 @@
 ---
-import torgestehr from '../../assets/saysync.jpg';
+import { Picture } from 'astro:assets';
+import saysync from '../../assets/saysync.jpg';
 import { getLangFromUrl, useTranslations, useLocalLink } from '../../utils/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -16,7 +17,7 @@ const link = useLocalLink(lang);
             <a href={link('/saysync')} title={t('casestudy1.link')}>{t('casestudy1.link')}</a>
         </div>
         <a href={link('/saysync')} title={t('casestudy1.link')} class="picture">
-            <img src={torgestehr.src} alt="SaySync" title="SaySync" fetchpriority="high" />
+            <Picture src={saysync} formats={['webp']} alt="SaySync" title="SaySync" fetchpriority="high" />
         </a>
     </div>
 </section>
@@ -75,15 +76,23 @@ const link = useLocalLink(lang);
                 padding-left: 30px;
                 border-left: 2px solid $black;
 
-                img {
+                picture {
+                    position: relative;
                     width: 100%;
                     height: auto;
-                    transition: border-radius 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transition: border-radius 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+                    }
                 }
 
                 &:hover {
-                    img {
-                        border-radius: 10%;
+                    picture {
+                        img {
+                            border-radius: 10%;
+                        }
                     }
                 }
             }
