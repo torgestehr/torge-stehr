@@ -1,8 +1,12 @@
 # Torge Stehr
 
-[torge.io](https://torge.io/)
+[torgestehr.com](https://torgestehr.com/)
 
 ## ToDos:
 
 -   [ ] "hello@torgestehr.com" >> Email-Address
--   [ ] YouTube channel link
+-   [ ] Responsive homepage
+-   [ ] SaySync Unterseite
+-   [ ] Impressum & Datenschutz
+-   [x] Astro 404 and Error page
+-   [ ] Robots & sitemap

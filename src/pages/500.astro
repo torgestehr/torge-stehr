@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="500 | An error has occurred :(" language="en">
+    <main>
+        <div>
+            <h2>An error has occurred</h2>
+            <p>No worries, you can just head back to the homepage.</p>
+            <a href="/" title="Back home">Back home</a>
+        </div>
+    </main>
+</Layout>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    main {
+        margin: 0 auto;
+        padding: 0 4vw;
+        width: 100%;
+        max-width: 1850px;
+
+        div {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 120px 0;
+            width: 100%;
+            min-width: 100%;
+
+            @media (max-width: 420px) {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+
+            h2 {
+                margin: 0;
+                margin-bottom: 25px;
+                color: $black;
+                font-size: 64px;
+                font-weight: 500;
+
+                @media (max-width: 650px) {
+                    font-size: 10vw;
+                    line-height: 13vw;
+                }
+
+                @media (max-width: 420px) {
+                    margin-bottom: 15px;
+                    font-size: 12vw;
+                    line-height: 16vw;
+                }
+            }
+
+            p {
+                margin: 0;
+                margin-bottom: 50px;
+                color: $black;
+                font-size: 25px;
+                line-height: 38px;
+
+                @media (max-width: 650px) {
+                    font-size: 4vw;
+                    line-height: 6vw;
+                }
+
+                @media (max-width: 420px) {
+                    margin-bottom: 30px;
+                    font-size: 5vw;
+                    line-height: 8vw;
+                }
+            }
+
+            a {
+                margin: 0;
+                color: $primary;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 2px solid $primary;
+                border-radius: 32px;
+                padding: 16px 24px;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                transition:
+                    color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715),
+                    background-color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+                &:hover {
+                    color: #fff;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+</style>

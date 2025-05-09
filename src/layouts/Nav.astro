@@ -26,7 +26,7 @@ const link = useLocalLink(lang);
                 )
             }
         </div>
-        <a href={link('/')} title="Torge Stehr">
+        <a href={link('/')} title="Torge Stehr" class="logo">
             <h1>Torge Stehr</h1>
         </a>
         <div class="links">
@@ -57,17 +57,47 @@ const link = useLocalLink(lang);
             max-width: 1850px;
             height: 50px;
 
+            @media (max-width: 800px) {
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                height: auto;
+                max-width: 100%;
+                padding: 0;
+            }
+
             .links {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 gap: 16px;
+
+                @media (max-width: 800px) {
+                    justify-content: flex-start;
+                    width: 100%;
+                    max-width: 1850px;
+                    height: 52px;
+                    padding: 0 4vw;
+                    border-top: 2px solid $black;
+                }
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                @media (max-width: 800px) {
+                    width: 100%;
+                    max-width: 1850px;
+                    height: 50px;
+                    padding: 0 4vw;
+                }
             }
 
             .language {
                 position: absolute;
                 right: 4vw;
-                bottom: -100%;
+                bottom: -50px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;

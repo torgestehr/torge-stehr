@@ -23,6 +23,16 @@ const t = useTranslations(lang);
             <!-- <a href="https://www.youtube.com/@torgestehr" title="YouTube">YouTube</a> -->
         </div>
     </div>
+    <div class="legal">
+        <div class="grid">
+            <div class="links">
+                <a href="/imprint" title={t('footer.imprint')}>{t('footer.imprint')}</a>
+                <p>|</p>
+                <a href="/privacy-policy" title={t('footer.privacy-policy')}>{t('footer.privacy-policy')}</a>
+            </div>
+            <p>Copyright © {new Date().getFullYear()} Torge Stehr. All Rights Reserved</p>
+        </div>
+    </div>
 </footer>
 
 <style lang="scss">
@@ -44,6 +54,11 @@ const t = useTranslations(lang);
             padding: 140px 0;
             width: 100%;
             min-width: 100%;
+
+            @media (max-width: 800px) {
+                padding-top: 120px;
+                padding-bottom: 80px;
+            }
 
             .title {
                 position: absolute;
@@ -83,6 +98,11 @@ const t = useTranslations(lang);
                     line-height: 140px;
                 }
 
+                @media (max-width: 650px) {
+                    font-size: 8vw;
+                    line-height: 11vw;
+                }
+
                 a {
                     position: relative;
                     color: $primary;
@@ -114,6 +134,7 @@ const t = useTranslations(lang);
         width: 100%;
         min-width: 100%;
         border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
 
         div {
             display: grid;
@@ -131,8 +152,79 @@ const t = useTranslations(lang);
                 padding: 70px 4vw;
                 border-right: 2px solid $black;
 
+                @media (max-width: 1280px) {
+                    font-size: 4vw;
+                }
+
+                @media (max-width: 800px) {
+                    padding: 40px 4vw;
+                }
+
+                @media (max-width: 420px) {
+                    font-size: 5vw;
+                }
+
                 &:last-child {
                     border-right: none;
+                }
+            }
+        }
+    }
+
+    .legal {
+        margin: 0 auto;
+        padding: 0 4vw;
+        width: 100%;
+        max-width: 1850px;
+
+        .grid {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 25px 0;
+            width: 100%;
+            min-width: 100%;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+                color: rgba($color: $black, $alpha: 0.5);
+            }
+
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                margin-bottom: 8px;
+
+                @media (max-width: 320px) {
+                    align-items: flex-start;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: $black;
+                    font-size: 16px;
+
+                    @media (max-width: 320px) {
+                        display: none;
+                    }
+                }
+
+                a {
+                    margin: 0;
+                    color: $black;
+                    font-size: 16px;
+                    text-decoration: none;
+                    transition: color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+                    &:hover {
+                        color: $primary;
+                    }
                 }
             }
         }

@@ -20,18 +20,18 @@ const language = props.language === 'de' ? 'de' : 'en';
         <meta name="author" content="Torge Stehr" />
         <meta name="copyright" content={`Copyright © ${new Date().getFullYear()} Torge Stehr. All Rights Reserved`} />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="DC.title" content="Torge Stehr" />
+        <meta name="DC.title" content={language === 'de' ? 'Torge Stehr - Software-Entwickler mit Sitz in Hannover' : 'Torge Stehr - Software Developer based in Hanover, Germany'} />
         <meta name="DC.subject" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
         <meta name="DC.creator" content="Torge Stehr" />
 
         <!-- search engine tags -->
-        <meta itemprop="name" content="Torge Stehr" />
+        <meta itemprop="name" content={language === 'de' ? 'Torge Stehr - Software-Entwickler mit Sitz in Hannover' : 'Torge Stehr - Software Developer based in Hanover, Germany'} />
         <meta itemprop="description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
         <meta itemprop="image" content="/assets/opengraph.jpg" />
 
         <!-- opengraph -->
         <meta property="og:locale" content={language === 'de' ? 'de_DE' : 'en_US'} />
-        <meta property="og:title" content="Torge Stehr" />
+        <meta property="og:title" content={language === 'de' ? 'Torge Stehr - Software-Entwickler mit Sitz in Hannover' : 'Torge Stehr - Software Developer based in Hanover, Germany'} />
         <meta property="og:site_name" content="Torge Stehr" />
         <meta property="og:url" content={language === 'de' ? 'https://torgestehr.com/de' : 'https://torgestehr.com/'} />
         <meta property="og:description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
@@ -39,7 +39,7 @@ const language = props.language === 'de' ? 'de' : 'en';
         <meta property="og:image" content="/assets/opengraph.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Torge Stehr" />
+        <meta name="twitter:title" content={language === 'de' ? 'Torge Stehr - Software-Entwickler mit Sitz in Hannover' : 'Torge Stehr - Software Developer based in Hanover, Germany'} />
         <meta name="twitter:description" content={language === 'de' ? 'Ein kreativer, kritisch denkender, effizienzorientierter Full-Stack-Entwickler. Verfügbar für freiberufliche Arbeit. Werfen Sie einen Blick auf meine bisherigen Projekte.' : 'A creative, critical thinking, detail and impact oriented full-stack developer. Available for freelance work. Take a look at my past projects.'} />
         <meta name="twitter:image" content="/assets/opengraph.jpg" />
 
