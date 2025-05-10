@@ -9,4 +9,4 @@
 -   [ ] SaySync Unterseite
 -   [ ] Impressum & Datenschutz
 -   [x] Astro 404 and Error page
--   [ ] Robots & sitemap
+-   [x] Robots & sitemap

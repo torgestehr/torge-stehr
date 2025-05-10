@@ -1,0 +1,5 @@
+# robots.txt zu https://torgestehr.com
+
+User-agent: *
+Allow: /
+Sitemap: https://torgestehr.com/sitemap.xml
