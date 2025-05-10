@@ -8,32 +8,33 @@ const t = useTranslations(lang);
     <h2 class="title">{t('services.title')}</h2>
     <div class="grid">
         <div>
-            <h3>{t('services.software-development.title')}</h3>
+            <h3 set:html={t('services.software-development.title')} />
             <p>{t('services.software-development.text')}</p>
         </div>
         <span></span>
         <div>
-            <h3>{t('services.workflow-automation.title')}</h3>
+            <h3 set:html={t('services.workflow-automation.title')} />
             <p>{t('services.workflow-automation.text')}</p>
         </div>
         <span></span>
         <div>
-            <h3>{t('services.ai-agents.title')}</h3>
+            <h3 set:html={t('services.ai-agents.title')} />
+            <h3 set:html={t('services.ai-agents.title-no-break')} />
             <p>{t('services.ai-agents.text')}</p>
         </div>
         <span></span>
         <div>
-            <h3>{t('services.webdesign.title')}</h3>
+            <h3 set:html={t('services.webdesign.title')} />
             <p>{t('services.webdesign.text')}</p>
         </div>
         <span></span>
         <div>
-            <h3>{t('services.it-support.title')}</h3>
+            <h3 set:html={t('services.it-support.title')} />
             <p>{t('services.it-support.text')}</p>
         </div>
         <span></span>
         <div>
-            <h3>{t('services.consulting.title')}</h3>
+            <h3 set:html={t('services.consulting.title')} />
             <p>{t('services.consulting.text')}</p>
         </div>
     </div>
@@ -79,11 +80,18 @@ const t = useTranslations(lang);
 
         .grid {
             display: grid;
-            // grid-template-columns: 1fr auto 1fr;
             grid-template-columns: 1fr auto 1fr auto 1fr;
             align-items: flex-start;
             justify-content: flex-start;
             padding: 30px 0;
+
+            @media (max-width: 1250px) {
+                grid-template-columns: 1fr auto 1fr;
+            }
+
+            @media (max-width: 550px) {
+                grid-template-columns: 1fr;
+            }
 
             span {
                 height: 100%;
@@ -95,8 +103,22 @@ const t = useTranslations(lang);
                     margin: 0 80px;
                 }
 
-                &:nth-child(3n) {
+                @media (max-width: 550px) {
                     display: none;
+                }
+
+                &:nth-of-type(3n) {
+                    display: none;
+
+                    @media (max-width: 1250px) {
+                        display: block;
+                    }
+                }
+
+                &:nth-of-type(2n) {
+                    @media (max-width: 1250px) {
+                        display: none;
+                    }
                 }
             }
 
@@ -110,6 +132,51 @@ const t = useTranslations(lang);
 
                 &:nth-child(-n + 5) {
                     border-top: none;
+                    padding-top: 60px;
+
+                    @media (max-width: 1250px) {
+                        border-top: 2px solid $black;
+                        padding-top: 4vw;
+                    }
+                }
+
+                &:nth-child(-n + 3) {
+                    border-top: none;
+                    padding-top: 60px;
+
+                    @media (max-width: 550px) {
+                        border-top: 2px solid $black;
+                        padding-top: 4vw;
+                    }
+                }
+
+                @media (max-width: 550px) {
+                    padding: 8vw 0 !important;
+                }
+
+                &:nth-child(-n + 1) {
+                    @media (max-width: 550px) {
+                        border-top: none;
+                        padding-top: 60px !important;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    h3 {
+                        &:nth-last-of-type(2) {
+                            @media (max-width: 1250px) {
+                                display: none;
+                            }
+                        }
+
+                        &:nth-last-of-type(1) {
+                            display: none;
+
+                            @media (max-width: 1250px) {
+                                display: block;
+                            }
+                        }
+                    }
                 }
 
                 h3 {
@@ -119,6 +186,26 @@ const t = useTranslations(lang);
                     font-size: 32px;
                     line-height: 45px;
                     font-weight: 500;
+
+                    @media (max-width: 1250px) {
+                        font-size: 2.5vw;
+                        line-height: 3.5vw;
+                    }
+
+                    @media (max-width: 920px) {
+                        font-size: 4vw;
+                        line-height: 6vw;
+                    }
+
+                    @media (max-width: 550px) {
+                        font-size: 6vw;
+                        line-height: 8.5vw;
+                    }
+
+                    @media (max-width: 370px) {
+                        font-size: 8vw;
+                        line-height: 12vw;
+                    }
                 }
 
                 p {
@@ -126,6 +213,26 @@ const t = useTranslations(lang);
                     color: $black;
                     font-size: 18px;
                     line-height: 34px;
+
+                    @media (max-width: 920px) {
+                        font-size: 2vw;
+                        line-height: 3.75vw;
+                    }
+
+                    @media (max-width: 740px) {
+                        font-size: 2.5vw;
+                        line-height: 4.5vw;
+                    }
+
+                    @media (max-width: 550px) {
+                        font-size: 4vw;
+                        line-height: 7vw;
+                    }
+
+                    @media (max-width: 370px) {
+                        font-size: 5vw;
+                        line-height: 9vw;
+                    }
                 }
             }
         }

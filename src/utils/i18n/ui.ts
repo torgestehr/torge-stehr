@@ -13,7 +13,7 @@ export const ui = {
         'casestudy1.link': 'View Case Study',
         'about.title': 'About me',
         'about.text': `
-            A son of God, startup enthusiast, outdoor freak, student
+            Startup enthusiast, outdoor freak, coffee lover, student
             <br />
             <br />
             Writes code since the age of 14. A creative, critical thinking, detail and impact oriented developer with a focus on greater efficiency and improvement through software.
@@ -24,11 +24,12 @@ export const ui = {
         'about.time': 'Local time:',
         'about.date-format': 'en-US',
         'services.title': "What I'm good at",
-        'services.software-development.title': 'Software Development',
+        'services.software-development.title': 'Software <br />Development',
         'services.software-development.text': 'I craft tailored software solutions, designing and implementing robust, scalable applications that meet complex business requirements while ensuring maintainability, security, and efficient performance.',
-        'services.workflow-automation.title': 'Workflow Automation',
+        'services.workflow-automation.title': 'Workflow <br />Automation',
         'services.workflow-automation.text': 'I streamline your business processes by implementing workflow automation, reducing manual tasks, accelerating operations, and enhancing accuracy through seamless integration of tools and platforms.',
-        'services.ai-agents.title': 'AI Agents',
+        'services.ai-agents.title': 'AI <br />Agents',
+        'services.ai-agents.title-no-break': 'AI Agents',
         'services.ai-agents.text': 'I develop intelligent AI agents that autonomously handle tasks, learn from data, and interact naturally with users, driving efficiency and unlocking new opportunities in your organization.',
         'services.webdesign.title': 'Webdesign',
         'services.webdesign.text': 'I deliver modern, responsive web designs that showcase your brand identity, engage visitors with intuitive layouts, and drive conversions by turning prospects into loyal customers.',
@@ -53,7 +54,7 @@ export const ui = {
         'casestudy1.link': 'Fallstudie ansehen',
         'about.title': 'Über mich',
         'about.text': `
-            Ein Sohn Gottes, Startup-Begeisterter, Outdoor-Freak, Student
+            Startup-Begeisterter, Outdoor-Freak, Kaffeeliebhaber, Student
             <br />
             <br />
             Schreibt Code seit dem 14. Lebensjahr. Ein kreativer, kritisch denkender, detail- und wirkungsorientierter Entwickler mit Schwerpunkt auf mehr Effizienz und Verbesserung durch Software.
@@ -64,11 +65,12 @@ export const ui = {
         'about.time': 'Ortszeit:',
         'about.date-format': 'de',
         'services.title': 'Was ich gut kann',
-        'services.software-development.title': 'Software-Entwicklung',
+        'services.software-development.title': 'Software-<br />Entwicklung',
         'services.software-development.text': 'Ich entwickle maßgeschneiderte Softwarelösungen, die robuste und skalierbare Anwendungen bieten, komplexe Geschäftsanforderungen erfüllen und dabei Wartbarkeit, Sicherheit sowie effiziente Performance gewährleisten.',
-        'services.workflow-automation.title': 'Workflow-Automatisierung',
+        'services.workflow-automation.title': 'Workflow-<br />Automatisierung',
         'services.workflow-automation.text': 'Ich optimiere Ihre Geschäftsabläufe durch Workflow-Automatisierung, reduziere manuelle Aufgaben, beschleunige Prozesse und steigere Präzision durch nahtlose Integration von Werkzeugen und Plattformen.',
-        'services.ai-agents.title': 'AI-Agents',
+        'services.ai-agents.title': 'AI-<br />Agents',
+        'services.ai-agents.title-no-break': 'AI-Agents',
         'services.ai-agents.text': 'Ich erstelle intelligente KI-Agenten, die eigenständig Aufgaben übernehmen, aus Daten lernen und natürlich mit Nutzern interagieren, um Effizienz zu steigern und neue Potenziale in Ihrem Unternehmen zu erschließen.',
         'services.webdesign.title': 'Webdesign',
         'services.webdesign.text': 'Ich liefere modernes, responsives Webdesign, das Ihre Markenidentität in Szene setzt, Besucher mit intuitiven Layouts anspricht und Interessenten in treue Kunden verwandelt.',
