@@ -15,9 +15,9 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://torgestehr.com/imprint</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://torgestehr.com/imprint" />
-        <xhtml:link rel="alternate" hreflang="de" href="https://torgestehr.com/de/imprint" />
+        <loc>https://torgestehr.com/site-notice</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://torgestehr.com/site-notice" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://torgestehr.com/de/site-notice" />
         <lastmod>2025-05-10</lastmod>
         <priority>0.5</priority>
     </url>

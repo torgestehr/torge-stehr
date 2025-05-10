@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Site Notice" language="en">
+    <main>
+        <div>
+            <h1>Site Notice</h1>
+
+            <p>
+                Torge Stehr<br />
+                Johann-Strau&szlig;-Weg 29<br />
+                30900 Wedemark
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Phone: +49 152 37784110<br />
+                E-mail: hello@torgestehr.com
+            </p>
+
+            <h2>VAT ID</h2>
+            <p>
+                Sales tax identification number according to Sect. 27 a of the Sales Tax Law:<br />
+                DE325823960
+            </p>
+
+            <h2>EU dispute resolution</h2>
+            <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br /> Our e-mail address can be found above in the site notice.</p>
+
+            <h2>Dispute resolution proceedings in front of a consumer arbitration board</h2>
+            <p>We participate in a dispute settlement procedure before a consumer arbitration board. The competent consumer arbitration board is Zentrum f&uuml;r Schlichtung e.V., Stra&szlig;burger Stra&szlig;e 8, 77694 Kehl am Rhein (<a href="https://www.verbraucher-schlichter.de" rel="noopener noreferrer" target="_blank">https://www.verbraucher-schlichter.de</a>).</p>
+        </div>
+    </main>
+</Layout>
+
+<style lang="scss">
+    @use '/src/styles/variables' as *;
+
+    main {
+        margin: 0 auto;
+        padding: 0 4vw;
+        width: 100%;
+        max-width: 1850px;
+
+        div {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 120px 0;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+
+            @media (max-width: 800px) {
+                padding-bottom: 80px;
+            }
+
+            @media (max-width: 420px) {
+                padding-top: 100px;
+                padding-bottom: 30px;
+            }
+
+            h1 {
+                margin: 0;
+                margin-bottom: 25px;
+                color: $black;
+                font-size: 48px;
+                font-weight: 500;
+
+                @media (max-width: 1060px) {
+                    font-size: 38px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 32px;
+                }
+            }
+
+            h2 {
+                margin: 0;
+                margin-bottom: 25px;
+                color: $black;
+                font-size: 34px;
+                font-weight: 500;
+
+                @media (max-width: 1060px) {
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+            }
+
+            p,
+            a {
+                margin: 0;
+                margin-bottom: 50px;
+                color: $black;
+                font-size: 22px;
+                line-height: 38px;
+
+                @media (max-width: 1060px) {
+                    font-size: 20px;
+                    line-height: 38px;
+                }
+
+                @media (max-width: 450px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+
+                @media (max-width: 375px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+</style>

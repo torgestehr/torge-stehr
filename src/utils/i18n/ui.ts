@@ -41,7 +41,7 @@ export const ui = {
         'services.consulting.text': 'I offer expert consulting services, partnering with you to evaluate strategies, identify opportunities, and implement solutions that drive growth and operational excellence.',
         'footer.title': 'Contact me',
         'footer.contact': 'Get it touch',
-        'footer.imprint': 'Imprint',
+        'footer.site-notice': 'Site Notice',
         'footer.privacy-policy': 'Privacy Policy'
     },
     de: {
@@ -84,7 +84,7 @@ export const ui = {
         'services.consulting.text': 'Ich biete professionelle Beratung, analysiere gemeinsam mit Ihnen Strategien, identifiziere Chancen und setze Lösungen um, die Wachstum fördern und betriebliche Exzellenz sichern.',
         'footer.title': 'Kontaktieren Sie mich',
         'footer.contact': 'Kontakt aufnehmen',
-        'footer.imprint': 'Impressum',
+        'footer.site-notice': 'Impressum',
         'footer.privacy-policy': 'Datenschutzerklärung'
     }
 } as const;
