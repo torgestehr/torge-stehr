@@ -9,14 +9,14 @@ export const ui = {
             Work of Torge Stehr
         `,
         'casestudy1.title': 'Case Study 01',
-        'casestudy1.text': 'I developed the software product SaySync, which offers users an easy link between Pipedrive and Outlook, saving time and reducing errors.',
+        'casestudy1.text': 'Developed the software product, SaySync, which offers users an easy link between Pipedrive and Outlook to save time and reduce errors.',
         'casestudy1.link': 'View Case Study',
         'about.title': 'About me',
         'about.text': `
-            Startup enthusiast, outdoor freak, coffee lover, student
+            Startup enthusiast, outdoor lover, coffee fanatic and student.
             <br />
             <br />
-            Writes code since the age of 14. A creative, critical thinking, detail and impact oriented developer with a focus on greater efficiency and improvement through software.
+            Has written code since the age of 14. A creative, critical thinking, detail and impact-oriented developer with a focus on greater efficiency and improvement through software.
             <br />
             <br />
             Based in Hanover, Germany
@@ -32,13 +32,14 @@ export const ui = {
         'services.workflow-automation.text': 'I streamline your business processes by implementing workflow automation, reducing manual tasks, accelerating operations, and enhancing accuracy through seamless integration of tools and platforms.',
         'services.ai-agents.title': 'AI<br />Agents',
         'services.ai-agents.title-no-break': 'AI Agents',
-        'services.ai-agents.text': 'I develop intelligent AI agents that autonomously handle tasks, learn from data, and interact naturally with users, driving efficiency and unlocking new opportunities in your organization.',
+        'services.ai-agents.text': 'I develop intelligent AI agents that autonomously handle tasks, learn from data, and interact naturally with users to drive efficiency and unlock new opportunities in your organization.',
         'services.webdesign.title': 'Webdesign',
         'services.webdesign.text': 'I deliver modern, responsive web designs that showcase your brand identity, engage visitors with intuitive layouts, and drive conversions by turning prospects into loyal customers.',
         'services.it-support.title': 'IT Support',
-        'services.it-support.text': ' I provide reliable IT support services, prompt issue resolution, proactive maintenance, and seamless system operations to minimize downtime and optimize productivity.',
+        'services.it-support.text': 'I provide reliable IT support services and prompt issue resolution, proactive maintenance, and seamless system operations to minimize downtime and optimize productivity.',
         'services.consulting.title': 'Consulting',
         'services.consulting.text': 'I offer expert consulting services, partnering with you to evaluate strategies, identify opportunities, and implement solutions that drive growth and operational excellence.',
+        'saysync.link': 'Visit website',
         'footer.title': 'Contact me',
         'footer.contact': 'Get it touch',
         'footer.site-notice': 'Site Notice',
@@ -52,14 +53,14 @@ export const ui = {
             Arbeit von Torge Stehr
         `,
         'casestudy1.title': 'Fallstudie 01',
-        'casestudy1.text': 'Ich habe das Softwareprodukt SaySync entwickelt, das den Benutzern eine einfache Verbindung zwischen Pipedrive und Outlook bietet, was Zeit spart und Fehler reduziert.',
+        'casestudy1.text': 'Entwickelte das Softwareprodukt SaySync, das Nutzern eine einfache Verbindung zwischen Pipedrive und Outlook bietet, um Zeit zu sparen und Fehler zu reduzieren.',
         'casestudy1.link': 'Fallstudie ansehen',
         'about.title': 'Über mich',
         'about.text': `
-            Startup-Begeisterter, Outdoor-Freak, Kaffeeliebhaber, Student
+            Startup-Enthusiast, Outdoor-Liebhaber, Kaffee-Fanatiker und Student.
             <br />
             <br />
-            Schreibt Code seit dem 14. Lebensjahr. Ein kreativer, kritisch denkender, detail- und wirkungsorientierter Entwickler mit Schwerpunkt auf mehr Effizienz und Verbesserung durch Software.
+            Schreibt Code seit dem 14. Lebensjahr. Ein kreativer, kritisch denkender, detail- und wirkungsorientierter Entwickler mit dem Fokus auf mehr Effizienz und Verbesserung durch Software.
             <br />
             <br />
             Sitz in Hannover, Deutschland
@@ -82,6 +83,7 @@ export const ui = {
         'services.it-support.text': 'Ich biete zuverlässigen IT-Support, schnelle Problemlösungen, proaktive Wartung und reibungslosen Systembetrieb, um Ausfallzeiten zu minimieren und die Produktivität zu steigern.',
         'services.consulting.title': 'Beratung',
         'services.consulting.text': 'Ich biete professionelle Beratung, analysiere gemeinsam mit Ihnen Strategien, identifiziere Chancen und setze Lösungen um, die Wachstum fördern und betriebliche Exzellenz sichern.',
+        'saysync.link': 'Webseite besuchen',
         'footer.title': 'Kontaktieren Sie mich',
         'footer.contact': 'Kontakt aufnehmen',
         'footer.site-notice': 'Impressum',
