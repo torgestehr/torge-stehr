@@ -186,7 +186,7 @@ const t = useTranslations(lang);
     function updateClock() {
         const dateFormat = (document.getElementById('date-format')! as HTMLInputElement).value;
         const now = new Date();
-        const timeZone: string = 'Europe/Berlin';
+        const timeZone: string = 'America/Vancouver';
         const formatter = new Intl.DateTimeFormat(dateFormat ?? 'en-US', { timeZone: timeZone, hour: '2-digit', minute: '2-digit', second: '2-digit' });
         document.getElementById('time')!.textContent = formatter.format(now);
     }

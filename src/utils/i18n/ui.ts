@@ -19,7 +19,7 @@ export const ui = {
             Has written code since the age of 14. A creative, critical thinking, detail and impact-oriented developer with a focus on greater efficiency and improvement through software.
             <br />
             <br />
-            Based in Hanover, Germany
+            Based in Vancouver, Canada
         `,
         'about.time': 'Local time:',
         'about.date-format': 'en-US',
@@ -63,7 +63,7 @@ export const ui = {
             Schreibt Code seit dem 14. Lebensjahr. Ein kreativer, kritisch denkender, detail- und wirkungsorientierter Entwickler mit dem Fokus auf mehr Effizienz und Verbesserung durch Software.
             <br />
             <br />
-            Sitz in Hannover, Deutschland
+            Sitz in Vancouver, Kanada
         `,
         'about.time': 'Ortszeit:',
         'about.date-format': 'de',
